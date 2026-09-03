@@ -1,0 +1,19 @@
+[project]
+name = "wabot-python"
+version = "1.0.0"
+description = "WhatsApp Cloud API bot with OpenAI, Anthropic and Gemini"
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["B008"]  # Depends() as a default value is the FastAPI idiom

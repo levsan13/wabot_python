@@ -1,0 +1,23 @@
+# --- web core ---
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+pydantic==2.12.4
+pydantic-settings==2.15.0
+python-multipart==0.0.20
+
+# --- HTTP / WhatsApp Cloud API ---
+httpx==0.28.1
+
+# --- persistence ---
+SQLAlchemy==2.0.52
+aiosqlite==0.22.1
+greenlet==3.2.4
+
+# --- LLM providers ---
+openai==3.7.0
+anthropic==1.3.0
+google-genai==2.22.0
+
+# --- dev/testing ---
+pytest==8.4.2
+pytest-asyncio==1.2.0
